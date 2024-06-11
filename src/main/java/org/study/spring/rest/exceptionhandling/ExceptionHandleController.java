@@ -4,13 +4,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// note : @ExceptionHandler 단독 사용
 //@RestController
 public class ExceptionHandleController {
 
-    /**
-     * ExceptionHandler 어노테이션이 존재하는 컨트롤러 내에서만 예외를 처리해줍니다.
-     * @param e
-     */
     @ExceptionHandler
     public void handleException(Exception e){
         System.out.println("예외 처리 완료 : " + e);
