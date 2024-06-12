@@ -7,18 +7,18 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 
-@RestControllerAdvice
-public class GlobalExceptionHandler {
-    @ExceptionHandler(value
-            = RuntimeException.class)
-    protected ResponseEntity<String> handleConflict(
-            RuntimeException ex, WebRequest request) {
-        String accept = request.getHeader(HttpHeaders.ACCEPT);
-        System.out.println(ex.getMessage());
-        if("application/json".equals(accept)) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("json 형태의 결과");
-        }else{
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("xml 형태의 결과");
-        }
-    }
-}
+//@RestControllerAdvice
+//public class GlobalExceptionHandler {
+//    @ExceptionHandler(value
+//            = RuntimeException.class)
+//    protected ResponseEntity<String> handleConflict(
+//            RuntimeException ex, WebRequest request) {
+//        String accept = request.getHeader(HttpHeaders.ACCEPT);
+//        System.out.println(ex.getMessage());
+//        if("application/json".equals(accept)) {
+//            return ResponseEntity.status(HttpStatus.CONFLICT).body("json 형태의 결과");
+//        }else{
+//            return ResponseEntity.status(HttpStatus.CONFLICT).body("xml 형태의 결과");
+//        }
+//    }
+//}
