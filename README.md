@@ -8,3 +8,4 @@ Baeldung 교육 커리큘럼에 따라 REST + Spring 개념 복습
 - [Entity를 DTO로 변환](https://velog.io/@hyensukim/Spring-Entity%EB%A5%BC-DTO%EB%A1%9C-%EB%B3%80%ED%99%98)
 - [Spring을 사용한 REST 오류 처리](https://velog.io/@hyensukim/Spring-Spring%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-REST-%EC%98%A4%EB%A5%98-%EC%B2%98%EB%A6%AC)
 - [Spring IoC와 DI](https://velog.io/@hyensukim/Spring-Spring-IoC%EC%99%80-DI)
+- [Spring Bean이란?](https://velog.io/@hyensukim/Spring-Spring-Bean%EC%9D%B4%EB%9E%80)
